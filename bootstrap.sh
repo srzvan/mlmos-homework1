@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cat ./moose.txt
+cat moose.txt
 echo "Initiating BOOTSTRAP.SH"
