@@ -14,11 +14,8 @@ if [[ $1 -eq 0 ]]; then
   fi
 fi
 
-# rsa keys for login
-
-
 # selinux config
-sed -i 's/SETENFORCE=[a-z]*/SETENFORCE=disabled/g' /etc/selinux/config &&
+sed -i 's/SELINUX=[a-z]*/SELINUX=disabled/g' /etc/selinux/config &&
 echo "$(date) SETENFORCE successfully set to 'disabled'." >> "$log_file"
 
 if [[ "$?" -eq 0 ]]; then
