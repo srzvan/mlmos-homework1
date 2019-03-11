@@ -18,7 +18,7 @@ fi
 
 
 # selinux config
-sed -i 's/SETENFORCE=[a-z]*/SETENFORCE=disabled/g' &&
+sed -i 's/SETENFORCE=[a-z]*/SETENFORCE=disabled/g' /etc/selinux/config &&
 echo "$(date) SETENFORCE successfully set to 'disabled'." >> "$log_file"
 
 if [[ "$?" -eq 0 ]]; then
